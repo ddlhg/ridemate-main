@@ -17,6 +17,7 @@ body {
     
   .column.middle {
     width: 70%;
+    height: 100vh;
     margin-left: 20px;
   }
   
