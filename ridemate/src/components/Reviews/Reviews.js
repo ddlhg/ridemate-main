@@ -15,10 +15,8 @@ function Reviews() {
   return (
     <div className="page">
       <div className="column left">
-        
-          <img className="profile-image"  src={sara}/>
-          <p id="location-text"> <i class="fa-solid fa-location-dot fa-sm"></i> Greenacres </p>
-        
+        <img className="profile-image"  src={sara}/>
+        <p id="location-text"> <i class="fa-solid fa-location-dot fa-sm"></i> Greenacres </p>
 
         <div className="tabs-container">
           <div className="button-container">
@@ -58,15 +56,13 @@ function Reviews() {
 
       <div className="column middle">
         <h1 id='large-text'>Reviews</h1>
-        <div className="text-container">
-          <p id='medium-text'>Add a review</p>
-
+        <div className="input-container">
           <input type="text" placeholder="How was your carpolling experience? " onChange={handleChange} value={inputText} />
-          <p id='small-text'>{inputText}</p>
+          <p id='input-text'>{inputText}</p>
         </div>
 
         <div className="text-container">
-          <p id='medium-text'>Laura Gutierrez</p>
+          <p id='medium-text'>Laura Gutierrez</p> <p>08/25/2022</p>
           <p id='small-text'>What an incredible ride with Sara! She was absolutely wonderful, friendly, and punctual. She provided a comfortable and safe journey.</p>
         </div>
 
