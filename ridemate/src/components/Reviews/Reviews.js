@@ -3,12 +3,15 @@ import "./Reviews.css";
 import sara from "../images/sara.jpg";
 import { ChangeEvent, useState } from "react";
 
-import { useNavigate } from "react-router-dom";
 
 
 function Reviews() {
   const [inputText, setInputText] = useState("");
 
+  const handleChange = (e) => {
+    
+    setInputText(e.target.value);
+  };
   return (
     <div className="page">
       <div className="column left">
@@ -57,9 +60,9 @@ function Reviews() {
         <h1 id='large-text'>Reviews</h1>
         <div className="text-container">
           <p id='medium-text'>Add a review</p>
-          <input type="text" placeholder="How was your carpolling experience? " value={inputText} />
+
+          <input type="text" placeholder="How was your carpolling experience? " onChange={handleChange} value={inputText} />
           <p id='small-text'>{inputText}</p>
-          
         </div>
 
         <div className="text-container">
